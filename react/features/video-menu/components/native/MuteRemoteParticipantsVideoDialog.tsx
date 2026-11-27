@@ -20,11 +20,13 @@ class MuteRemoteParticipantsVideoDialog extends AbstractMuteRemoteParticipantsVi
     override render() {
         return (
             <ConfirmDialog
+                confirmLabel = 'dialog.muteParticipantsVideoButton'
                 descriptionKey = { this.props.isVideoModerationOn
                     ? 'dialog.muteParticipantsVideoDialogModerationOn'
                     : 'dialog.muteParticipantsVideoDialog'
                 }
-                onSubmit = { this._onSubmit } />
+                onSubmit = { this._onSubmit }
+                title = 'dialog.muteParticipantsVideoTitle' />
         );
     }
 }
